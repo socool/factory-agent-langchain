@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "factory-agent-langchain"
+version = "0.1.0"
+description = ""
+authors = ["Kamolsit Mongkolsrisawat <kamolsit@computerlogy.com>"]
+readme = "README.md"
+packages = [{include = "factory_agent_langchain"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^7.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
