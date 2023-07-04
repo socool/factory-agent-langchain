@@ -1,3 +1,6 @@
+from langchain.agents import Tool, AgentExecutor, BaseSingleActionAgent
+from langchain import OpenAI, SerpAPIWrapper
+
 # Abstract course
 class Course:
  
@@ -89,3 +92,16 @@ if __name__ == "__main__":
  
     complex_course = construct_course(Complexcourse)
     print(complex_course)
+
+from langchain.utilities import SerpAPIWrapper
+import os
+os.environ['SERPAPI_API_KEY'] = "12345678"
+search = SerpAPIWrapper()
+tools = [
+    Tool(
+        name="Search",
+        func=search.run,
+        description="useful for when you need to answer questions about current events",
+        return_direct=True,
+    )
+]

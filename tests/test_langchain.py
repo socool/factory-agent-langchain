@@ -1,3 +1,5 @@
+import os
+
 def test_import() -> None:
     from langchain.agents import (
         Tool,
@@ -7,3 +9,7 @@ def test_import() -> None:
     )
 
     assert "import langchain passes."
+
+def test_get_key() -> None:
+    print(">>>",os.environ.get('SERPAPI_API_KEY'))
+    assert "check env"

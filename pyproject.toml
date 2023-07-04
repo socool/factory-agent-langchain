@@ -10,6 +10,8 @@ packages = [{include = "factory_agent_langchain"}]
 python = ">=3.8.1,<4.0"
 pytest = "^7.4.0"
 langchain = "^0.0.222"
+google-search-results = "^2.4.2"
+pytest-env = "^0.8.2"
 
 [build-system]
 requires = ["poetry-core"]
