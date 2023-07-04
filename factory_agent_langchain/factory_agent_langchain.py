@@ -94,8 +94,7 @@ if __name__ == "__main__":
     print(complex_course)
 
 from langchain.utilities import SerpAPIWrapper
-import os
-os.environ['SERPAPI_API_KEY'] = "12345678"
+
 search = SerpAPIWrapper()
 tools = [
     Tool(
