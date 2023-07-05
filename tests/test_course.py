@@ -1,4 +1,4 @@
-from factory_agent_langchain.factory_agent_langchain import DSA, construct_course
+from factory_agent_langchain.course import DSA, construct_course
 
 
 def test_import() -> None:

@@ -1,5 +1,5 @@
 import os
-from factory_agent_langchain.factory_agent_langchain import AgentMode,AgentFactory,CustomSingleAgent
+from factory_agent_langchain.agent import AgentMode,AgentFactory,CustomSingleAgent
 from langchain.tools import Tool
 from langchain import OpenAI
 
